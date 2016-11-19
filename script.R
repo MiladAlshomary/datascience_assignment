@@ -31,7 +31,7 @@ all_data$label[all_data$label == 5] <- "STANDING"
 all_data$label[all_data$label == 6] <- "LAYING"
 
 # save all_data datatable into csv file
-write.csv(all_data, './all_data.csv')
+write.table(all_data, './all_data.txt', row.name=FALSE)
 
 #5. create a summary result file by grouping the data by label and subject
 # and calculate average of the measurements.
@@ -39,4 +39,4 @@ summary_result <- summarise(group_by(all_data,subject, label), mean(x_body_acc_m
                             mean(x_body_std_mean), mean(y_body_std_mean), mean(z_body_std_mean))
 
 # save summary_result datatable into csv file
-write.csv(summary_result, './summary_data.csv')
+write.table(summary_result, './summary_data.txt', row.name=FALSE)
