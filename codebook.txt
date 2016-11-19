@@ -1,0 +1,31 @@
+all_data.csv 
+=================
+A file contains all the data from train and test files:
+
+variables: 
+
+subject, subject identifier for the subject who performed the test
+tBodyAcc-mean()-X, 		taken from the train/test files features
+tBodyAcc-mean()-Y, 		taken from the train/test files features
+tBodyAcc-mean()-Z, 		taken from the train/test files features
+tBodyAcc-std()-X , 		taken from the train/test files features
+tBodyAcc-std()-Y, 		taken from the train/test files features
+tBodyAcc-std()-Z, 		taken from the train/test files features
+label, label of 		the activity as a sequence of characters
+
+
+summary_data.csv
+===================
+A file that summarize all_data.csv file. it contains subject identifier, activity and the average of
+other values.
+
+variables:
+
+subject, subject identifier of the subject who performed the test
+label, character sequence that define the activiy that was performed
+mean(x_body_acc_mean), 	Average of the x_body_acc_mean for each subject and each label
+mean(y_body_acc_mean),	Average of the y_body_acc_mean for each subject and each label
+mean(z_body_acc_mean),	Average of the z_body_acc_mean for each subject and each label
+mean(x_body_std_mean),	Average of the x_body_std_mean for each subject and each label
+mean(y_body_std_mean),	Average of the y_body_std_mean for each subject and each label
+mean(z_body_std_mean),	Average of the z_body_std_mean for each subject and each label
