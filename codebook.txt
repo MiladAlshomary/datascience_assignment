@@ -1,4 +1,4 @@
-all_data.csv 
+all_data.txt 
 =================
 A file contains all the data from train and test files:
 
@@ -14,9 +14,9 @@ tBodyAcc-std()-Z, 		taken from the train/test files features
 label, label of 		the activity as a sequence of characters
 
 
-summary_data.csv
+summary_data.txt
 ===================
-A file that summarize all_data.csv file. it contains subject identifier, activity and the average of
+A file that summarize all_data.txt file. it contains subject identifier, activity and the average of
 other values.
 
 variables:
